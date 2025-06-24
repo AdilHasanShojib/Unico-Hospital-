@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Surgical Safety Checklist</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 30px;
+            font-size: 18px;
+        }
+        .border-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            height: 100%;
+        }
+        .section-title {
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            text-decoration: underline;
+        }
+        @media print {
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-end mb-2">
+        <strong>Date:</strong> <input type="text">
+    </div>
+    <h4 class="text-center mb-3">SURGICAL SAFETY CHECKLIST</h4>
+    <p class="text-center">Adapted from WHO Surgical Safety Checklist and Includes all JCIA requirements</p>
+
+    <div class="row g-3">
+        <!-- SIGN IN COLUMN -->
+        <div class="col-md-4">
+            <div class="border-box">
+                <div class="section-title">SIGN IN<br><small>(Before Induction of Anaesthesia)</small></div>
+                <p><strong>Time:</strong> <input type="text"></p>
+
+                <p>Patient has confirmed:</p>
+                <p><input type="checkbox"> <label>Identity and ID band in place</label><br>
+                <input type="checkbox"> <label>Correct Procedure/surgery</label><br>
+                <input type="checkbox"> <label>Correct site and side</label><br>
+                <input type="checkbox"> <label>Signed the Informed Consent</label></p>
+
+                <p><input type="checkbox"> <label>NA (Site Marking)</label><br>
+                <input type="checkbox"> <label>Patient participated in site marking</label><br>
+                <input type="checkbox"> <label>Site marked using method</label> (<input type="text">)</p>
+
+                <p><strong>Anesthesia Safety</strong></p>
+                <p><input type="checkbox"> <label>Anesthesia machine & medication check complete?</label><br>
+                <label>Known allergy:</label> <input type="checkbox"> <label>Yes</label> <input type="checkbox"> <label>No</label><br>
+                <label>Difficult airway/aspiration risk:</label> <input type="checkbox"> <label>Yes</label> <input type="checkbox"> <label>No</label><br>
+                <label>Blood loss risk (>500ml):</label> <input type="checkbox"> <label>Yes</label> <input type="checkbox"> <label>No</label></p>
+
+                <p>If Yes: IV access and blood arranged</p>
+                <p>Units: <input type="text"> Blood group: <input type="text"></p>
+                <p><label>Implant:</label> <input type="checkbox"> <label>Required</label> <input type="checkbox"> <label>Not Required</label><br>
+                <label>Wearing TLD badge:</label> <input type="checkbox"> <label>Yes</label> <input type="checkbox"> <label>No</label> <input type="checkbox"> <label>NA</label></p>
+
+                <p><strong>Documentation</strong></p>
+                <p><input type="checkbox"> <label>History & Physical exam</label><br>
+                <input type="checkbox"> <label>Anesthesia/sedation consent</label> <input type="checkbox"> <label>NA</label><br>
+                <input type="checkbox"> <label>Imaging & lab tests</label> <input type="checkbox"> <label>NA</label><br>
+                <label>Throat/nose pack:</label> <input type="checkbox"> <label>Yes</label> <input type="checkbox"> <label>No</label></p>
+
+                <p>Time of Induction: <input type="text"></p>
+                <p>Name of Anesthetist: <input type="text"> Emp ID: <input type="text"></p>
+                <p>Signature: <input type="text"></p>
+                <p>Verified by Nurse: <input type="text"> Emp ID: <input type="text"></p>
+            </div>
+        </div>
+
+        <!-- TIME OUT COLUMN -->
+        <div class="col-md-4">
+            <div class="border-box">
+                <div class="section-title">TIME OUT<br><small>(Before Skin Incision)</small></div>
+                <p><strong>Time:</strong> <input type="text"></p>
+
+                <p><input type="checkbox"> <label>All team members ready</label><br>
+                <input type="checkbox"> <label>Patient Identity confirmed (Full name & UHID)</label><br>
+                <input type="checkbox"> <label>Consent available and appropriate</label></p>
+
+                <p>Pre-op diagnosis: <input type="text"></p>
+                <p>Planned procedure: <input type="text"></p>
+                <p>Correct site/side: <input type="text"> <input type="checkbox"> <label>NA</label></p>
+                <p><input type="checkbox"> <label>Site marking visible after prep</label> <input type="checkbox"> <label>No</label></p>
+
+                <p><label>Antibiotic prophylaxis given:</label> <input type="checkbox"> <label>NA</label> <input type="checkbox"> <label>Yes</label> <input type="checkbox"> <label>No</label><br>
+                Time given: <input type="text"></p>
+
+                <p><strong>Anticipated Critical Events</strong></p>
+                <p><input type="checkbox"> <label>Critical steps reviewed</label><br>
+                Operative duration: <input type="text"><br>
+                <input type="checkbox"> <label>Significant blood loss</label> <input type="checkbox"> <label>No</label><br>
+                <input type="checkbox"> <label>Special equipment needed</label> <input type="checkbox"> <label>No</label><br>
+                <input type="checkbox"> <label>Repeat antibiotic dose intra-op</label> <input type="checkbox"> <label>No</label></p>
+
+                <p><strong>Implant Devices</strong></p>
+                <p><input type="checkbox"> <label>NA</label> <input type="checkbox"> <label>Correct type available</label><br>
+                <input type="checkbox"> <label>Surgeon examined implant</label></p>
+
+                <p><strong>Anesthesia Team:</strong> Specific concerns? <input type="checkbox"> <label>Yes</label> <input type="checkbox"> <label>No</label></p>
+
+                <p><strong>Nursing Team</strong></p>
+                <p><input type="checkbox"> <label>Sterility confirmed (indicator results)</label><br>
+                <input type="checkbox"> <label>Instruments/tech available and functional</label><br>
+                <input type="checkbox"> <label>Imaging displayed</label> <input type="checkbox"> <label>NA</label><br>
+                <input type="checkbox"> <label>SSI bundle undertaken</label><br>
+                <input type="checkbox"> <label>VTE prophylaxis</label> <input type="checkbox"> <label>NA</label></p>
+
+                <p>Time of Incision: <input type="text"></p>
+                <p>Circulating Nurse Sign/Emp ID: <input type="text"></p>
+            </div>
+        </div>
+
+        <!-- SIGN OUT COLUMN -->
+        <div class="col-md-4">
+            <div class="border-box">
+                <div class="section-title">SIGN OUT<br><small>(Before Patient Leaves OR)</small></div>
+                <p><strong>Time:</strong> <input type="text"></p>
+
+                <p><input type="checkbox"> <label>Procedure performed:</label> <input type="text"><br>
+                <input type="checkbox"> <label>Post-op diagnosis:</label> <input type="text"></p>
+                <p><input type="checkbox"> <label>Instrument/sponge/needle count correct</label> <input type="checkbox"> <label>No</label> <input type="checkbox"> <label>NA</label><br>
+                <input type="checkbox"> <label>Throat/nose pack removed</label> <input type="checkbox"> <label>No</label> <input type="checkbox"> <label>NA</label><br>
+                <input type="checkbox"> <label>Any specimen</label> <input type="checkbox"> <label>No</label> <input type="checkbox"> <label>NA</label><br>
+                <input type="checkbox"> <label>Labelled</label> <input type="checkbox"> <label>No</label> <input type="checkbox"> <label>NA</label><br>
+                <input type="checkbox"> <label>Equipment problems to address</label> <input type="checkbox"> <label>No</label></p>
+
+                <p>Key concerns for recovery: <input type="text"></p>
+                <p><input type="checkbox"> <label>Implant registry updated</label> <input type="checkbox"> <label>No</label> <input type="checkbox"> <label>NA</label></p>
+
+                <p>End of Anesthesia Time: <input type="text"></p>
+                <p>End of Surgery Time: <input type="text"></p>
+                <p>Remarks: <input type="text"></p>
+
+                <p><strong>Circulating Nurse:</strong> <input type="text"> Signature/Emp ID: <input type="text"></p>
+                <p><strong>Scrub Nurse:</strong> <input type="text"> Signature/Emp ID: <input type="text"></p>
+                <p><strong>Anesthetist:</strong> <input type="text"> Signature/Emp ID: <input type="text"></p>
+                <p><strong>Surgeon:</strong> <input type="text"> Signature/Emp ID: <input type="text"></p>
+
+                <p class="text-end mt-3">UHP/NS/IPD-021/VER-00/24</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4 no-print">
+        <button onclick="window.print()" class="btn btn-primary">🖨️ Print Checklist</button>
+    </div>
+
+</body>
+</html>
