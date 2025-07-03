@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OT Checklist Form</title>
+    <style>
+        body {
+            font-size: 12px;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1px solid #000;
+            vertical-align: top;
+            padding: 4px;
+        }
+        input[type="text"], input[type="time"] {
+            width: 95%;
+            font-size: 12px;
+        }
+        textarea {
+            width: 95%;
+            font-size: 12px;
+        }
+        .section-title {
+            font-weight: bold;
+            background: #f0f0f0;
+            text-align: center;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Top Table (Header) -->
+<table>
+    <tr>
+        <td style="width: 50%;">Date: <input type="text" name="date" /></td>
+        <td>Adopted from WHO and includes OT protocol</td>
+    </tr>
+</table>
+
+<!-- Main Form Table (SIGN IN, TIME OUT, SIGN OUT) -->
+<table>
+    <tr>
+        <th class="section-title">SIGN IN<br><small>Before Induction of Anesthesia</small></th>
+        <th class="section-title">TIME OUT<br><small>Before Skin Incision</small></th>
+        <th class="section-title">SIGN OUT<br><small>Before Patient Leaves Operating Room</small></th>
+    </tr>
+
+    <!-- First Row -->
+    <tr>
+        <td>
+            Time: <input type="text"><br><br>
+            <b>Patient has confirmed:</b><br>
+            <label><input type="checkbox"> Text</label><br>
+            <label><input type="checkbox"> Text</label><br><br>
+            <b>Site Marking</b><br>
+            <label><input type="checkbox"> Text</label><br>
+            <label><input type="checkbox"> Text</label><br><br>
+
+            <b>Anesthesia Safety</b><br>
+            Anesthesia machine & medication check complete?<br>
+            <label><input type="radio" name="machchk"> Yes</label>
+            <label><input type="radio" name="machchk"> No</label><br>
+
+            Known Allergy? 
+            <label><input type="radio" name="allergy"> Yes</label>
+            <label><input type="radio" name="allergy"> No</label><br>
+
+            Difficult Airway? 
+            <label><input type="radio" name="airway"> Yes</label>
+            <label><input type="radio" name="airway"> No</label><br>
+
+            Blood loss risk (>500ml)? 
+            <label><input type="radio" name="bloodloss"> Yes</label>
+            <label><input type="radio" name="bloodloss"> No</label><br>
+
+            If yes, adequate IV & blood product? 
+            <input type="text"><br>
+
+            Units: <input type="text" name="units"><br>
+            Blood Group: <input type="text" name="bloodgroup">
+        </td>
+
+        <td>
+            Time: <input type="text"><br><br>
+            Surgical/Procedure Team Checklist:<br>
+            All members introduced? <br><br>
+
+            <b>Surgeon, anesthesia, nurse confirm:</b><br>
+            - Patient identity<br>
+            - Procedure<br>
+            - Site<br><br>
+
+            Consent available? 
+            <label><input type="radio" name="consent"> Yes</label>
+            <label><input type="radio" name="consent"> No</label><br><br>
+
+            Pre-op diagnosis: <input type="text"><br>
+            Planned procedure: <input type="text"><br>
+            Correct site and side: <input type="text"><br><br>
+
+            <b>Prophylaxis Antibiotic</b><br>
+            Given within last 60 min?<br>
+            <label><input type="radio" name="antibiotic"> Yes</label>
+            <label><input type="radio" name="antibiotic"> No</label><br>
+        </td>
+
+        <td>
+            Time: <input type="text"><br>
+            Procedure/Surgery Performed: <input type="text"><br>
+            Post-op Diagnosis: <input type="text"><br><br>
+
+            Instruments, sponge & needle counts:<br>
+            <label><input type="radio" name="count"> Yes</label>
+            <label><input type="radio" name="count"> No</label>
+            <label><input type="radio" name="count"> NA</label><br>
+
+            Throat/nose pack removed?<br>
+            <label><input type="radio" name="pack"> Yes</label>
+            <label><input type="radio" name="pack"> No</label>
+            <label><input type="radio" name="pack"> NA</label><br>
+
+            Specimen present?
+            <label><input type="radio" name="specimen"> Yes</label>
+            <label><input type="radio" name="specimen"> No</label>
+            <label><input type="radio" name="specimen"> NA</label><br>
+
+            Specimen labelled?
+            <label><input type="radio" name="labelled"> Yes</label>
+            <label><input type="radio" name="labelled"> No</label>
+            <label><input type="radio" name="labelled"> NA</label><br>
+
+            Any media/technology? 
+            <label><input type="radio" name="media"> Yes</label>
+            <label><input type="radio" name="media"> No</label>
+            <label><input type="radio" name="media"> NA</label><br>
+
+            Key concerns for recovery:<br>
+            <textarea></textarea><br>
+
+            Implant registry updated?
+            <label><input type="radio" name="implant"> Yes</label>
+            <label><input type="radio" name="implant"> No</label>
+            <label><input type="radio" name="implant"> NA</label>
+        </td>
+    </tr>
+
+    <!-- Second Row - Continued Content -->
+    <tr>
+        <td>
+            Implant: 
+            <label><input type="checkbox"> R/L</label>
+            <label><input type="checkbox"> Not R/L</label><br>
+
+            Staff wearing ID badges? 
+            <label><input type="radio" name="idbadge"> Yes</label>
+            <label><input type="radio" name="idbadge"> No</label>
+            <label><input type="radio" name="idbadge"> NA</label><br><br>
+
+            Documentation:<br>
+            <label><input type="checkbox"> Text</label><br>
+            <label><input type="checkbox"> Text</label><br>
+            Throat pack/nose pack: 
+            <label><input type="radio" name="throat"> Yes</label>
+            <label><input type="radio" name="throat"> No</label><br><br>
+
+            Time of induction of anesthesia: <input type="text"><br>
+        </td>
+
+        <td>
+            Anticipated Critical Events:<br>
+            Critical steps reviewed? 
+            <label><input type="radio" name="critical"> Yes</label>
+            <label><input type="radio" name="critical"> NA</label><br>
+
+            Operation duration: <input type="text"><br>
+
+            Significant blood loss anticipated?
+            <label><input type="radio" name="bloodloss2"> Yes</label>
+            <label><input type="radio" name="bloodloss2"> No</label><br>
+
+            Any specific equipment?
+            <label><input type="radio" name="equipment"> Yes</label>
+            <label><input type="radio" name="equipment"> No</label><br>
+
+            Intra-op reports or events: 
+            <label><input type="radio" name="events"> Yes</label>
+            <label><input type="radio" name="events"> No</label><br>
+
+            Implant Device:
+            <label><input type="checkbox"> Text</label>
+            <label><input type="checkbox"> Text</label>
+        </td>
+
+        <td>
+            End of anesthesia time: <input type="text"><br>
+            End of surgery time: <input type="text"><br>
+            Remarks (if any): <input type="text"><br><br>
+
+            Anesthesia Team Verification:<br>
+            Are there any patient concerns? 
+            <label><input type="radio" name="concern"> Yes</label>
+            <label><input type="radio" name="concern"> No</label><br><br>
+
+            Nurse Team Verification:<br>
+            <label><input type="checkbox"> Text</label><br>
+            <label><input type="checkbox"> Text</label><br><br>
+
+            Nurse Signatures:<br>
+            Nurse: <input type="text"><br>
+            Signature: <input type="text"><br>
+            Nurse: <input type="text"><br>
+            Signature: <input type="text"><br>
+        </td>
+    </tr>
+
+    <!-- Last Row: Footer Sign -->
+    <tr>
+        <td>
+            Name: <input type="text"><br>
+            Verified: <input type="text">
+        </td>
+        <td>
+            Time: <input type="text"><br>
+            Nurse Verified: <input type="text">
+        </td>
+        <td>
+            Final Signature: <input type="text">
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
